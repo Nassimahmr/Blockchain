@@ -1,0 +1,74 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-navbar {
+  background-color: #2c3e50;
+  padding: 1rem;
+  color: white;
+}
+
+.nav-links-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #3498db;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #2980b9;
+}
+
+.app-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.welcome-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.exercise-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.exercise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.app-footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.credits {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
